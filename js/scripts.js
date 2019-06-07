@@ -66,13 +66,13 @@ $(function(){
     event.preventDefault();
   })
 
-  $(".displn").submit(function(event){
-    displn = parseInt($("input:radio[name=displn]:checked").val());
-    if (displn ==1) {
-      $("#displn1").show()
-    } else {
-      $("#displn2").show()
-    }
-    event.preventDefault();
-  })
+  // $(".displn").submit(function(event){
+  //   displn = parseInt($("input:radio[name=displn]:checked").val());
+  //   if (displn ==1) {
+  //     $("#displn1").text("#displn1")
+  //   } else {
+  //     $("#displn2").text("#displn2")
+  //   }
+  //   event.preventDefault();
+  // }) so far not working
 });
