@@ -10,6 +10,7 @@ $(function(){
   var lvl;
   var obj;
   var eg;
+  var displn;
 
   $("#age").submit(function(event){
     age = parseInt($("input#age").val());
@@ -21,7 +22,6 @@ $(function(){
     } else {
       $(".surv").show();
       $("#age").hide();
-
     }
     event.preventDefault();
   })
@@ -63,7 +63,16 @@ $(function(){
       $("#pol").hide();
     }
 
-
     event.preventDefault();
-  });
+  })
+
+  $(".displn").submit(function(event){
+    displn = parseInt($("input:radio[name=displn]:checked").val());
+    if (displn ==1) {
+      $("#displn1").show()
+    } else {
+      $("#displn2").show()
+    }
+    event.preventDefault();
+  })
 });
