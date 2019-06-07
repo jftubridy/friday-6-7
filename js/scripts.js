@@ -7,7 +7,6 @@
 
 $(function(){
   var age;
-  //var lang;
   var lvl;
   var obj;
   var eg;
@@ -22,7 +21,7 @@ $(function(){
     } else {
       $(".surv").show();
       $("#age").hide();
-      //$(".lang").show();
+
     }
     event.preventDefault();
   })
@@ -64,33 +63,6 @@ $(function(){
       $("#pol").hide();
     }
 
-
-  // $(".surv").submit(function(event){
-  //   lvl = $("#lvl").val();
-  //   obj = $("#obj").val();
-  //   eg = $("#eg").val();
-  //
-  //   if (eg == 3) {
-  //     $("#pol").addClass("show");
-  //     $("#htm").removeClass("show");
-  //     $("#cs").removeClass("show");
-  //     $("#jsrpt").removeClass("show");
-  //   } else if (lvl ==1 && obj ==1){
-  //     $("#htm").addClass("show");
-  //     $("#cs").removeClass("show");
-  //     $("#jsrpt").removeClass("show");
-  //     $("#pol").removeClass("show");
-  //   } else if (lvl ==2 && obj ==2){
-  //     $("#htm").removeClass("show");
-  //     $("#cs").addClass("show");
-  //     $("#jsrpt").removeClass("show");
-  //     $("#pol").removeClass("show");
-  //   } else {
-  //     $("#htm").removeClass("show");
-  //     $("#cs").removeClass("show");
-  //     $("#jsrpt").addClass("show");
-  //     $("#pol").removeClass("show");
-  //   }
 
     event.preventDefault();
   });

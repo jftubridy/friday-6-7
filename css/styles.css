@@ -2,12 +2,7 @@
   display: none;
 }
 
-/* .lang {
-  display: none;
-} */
-/* .show {
-  display: none;
-} */
+
 #htm {
   display: none;
 }
@@ -22,4 +17,10 @@
 }
 body {
   background-color: teal;
+  text-align: center;
+}
+
+.lang {
+  border: 2px solid black;
+  margin: 10px;
 }
