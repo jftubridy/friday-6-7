@@ -15,6 +15,9 @@
 #pol {
   display: none;
 }
+.displn {
+  display: none;
+}
 body {
   background-color: lightseagreen;
   text-align: center;

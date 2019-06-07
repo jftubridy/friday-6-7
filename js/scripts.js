@@ -62,17 +62,20 @@ $(function(){
       $("#jsrpt").show();
       $("#pol").hide();
     }
-
+    
     event.preventDefault();
-  })
+    debugger;
+    })
 
-  // $(".displn").submit(function(event){
-  //   displn = parseInt($("input:radio[name=displn]:checked").val());
-  //   if (displn ==1) {
-  //     $("#displn1").text("#displn1")
-  //   } else {
-  //     $("#displn2").text("#displn2")
-  //   }
-  //   event.preventDefault();
-  // }) so far not working
+    //moved radio into this function to see if that would fix it, it did not.
+    $(".displn").submit(function(event){
+      displn = parseInt($("input:radio[name=.displn]:checked").val());
+      if (displn ==1) {
+        $("#displn1").show("#displn1")
+      } else {
+        $("#displn2").show("#displn2")
+      }
+      event.preventDefault();
+
+  })
 });
