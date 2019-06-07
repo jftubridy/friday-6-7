@@ -1,7 +1,14 @@
-.form1 {
+.surv {
   display: none;
 }
 
 .lang {
   display: none;
+}
+.show {
+  display: block;
+}
+
+body {
+  background-color: teal;
 }
