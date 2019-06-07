@@ -17,9 +17,6 @@ _This simple webpage allows a user to select variables that apply to them to hel
 
 _Presently the radio buttons asking about self discipline do not work_
 
-## Support and contact details
-
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
 
 ## Technologies Used
 
