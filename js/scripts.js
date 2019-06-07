@@ -37,6 +37,16 @@ $(function(){
       $("#htm").hide();
       $("#cs").hide();
       $("#jsrpt").hide();
+    } else if (lvl== 1){
+      $("#htm").show();
+      $("#cs").hide();
+      $("#jsrpt").hide();
+      $("#pol").hide();
+    } else if (lvl ==3 && eg ==2 ){
+      $("#htm").hide();
+      $("#cs").hide();
+      $("#jsrpt").show();
+      $("#pol").hide();
     } else if (lvl ==1, 2 && obj ==1){
       $("#htm").show();
       $("#cs").hide();
