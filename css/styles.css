@@ -2,13 +2,24 @@
   display: none;
 }
 
-.lang {
+/* .lang {
+  display: none;
+} */
+/* .show {
+  display: none;
+} */
+#htm {
   display: none;
 }
-.show {
-  display: block;
+#cs {
+  display: none;
 }
-
+#jsrpt {
+  display: none;
+}
+#pol {
+  display: none;
+}
 body {
   background-color: teal;
 }
