@@ -1,16 +1,11 @@
-
-
-
-
-
-
-
 $(function(){
   var age;
   var lvl;
   var obj;
   var eg;
   var displn;
+
+
 
   $("#age").submit(function(event){
     age = parseInt($("input#age").val());
@@ -62,20 +57,20 @@ $(function(){
       $("#jsrpt").show();
       $("#pol").hide();
     }
-    
     event.preventDefault();
-    debugger;
-    })
 
-    //moved radio into this function to see if that would fix it, it did not.
-    $(".displn").submit(function(event){
-      displn = parseInt($("input:radio[name=.displn]:checked").val());
-      if (displn ==1) {
+    $(".radio").submit(function(event){
+      var radio =parseInt($("input:radio[name=displn]:checked").val());
+      if (radio ==1) {
         $("#displn1").show("#displn1")
       } else {
         $("#displn2").show("#displn2")
       }
+
       event.preventDefault();
+    })
+
+    //moved radio into this function to see if that would fix it, it did not.
 
   })
 });
