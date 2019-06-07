@@ -58,7 +58,7 @@ $(function(){
       $("#pol").hide();
     }
     event.preventDefault();
-
+//it doesn't seem to want to run the radio code
     $(".radio").submit(function(event){
       var radio =parseInt($("input:radio[name=displn]:checked").val());
       if (radio ==1) {
