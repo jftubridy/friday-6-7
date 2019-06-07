@@ -7,17 +7,36 @@
 
 $(function(){
   var age;
+  //var lang;
+  var lvl;
+  var obj;
+  var eg;
 
   $("#age").submit(function(event){
     age = parseInt($("input#age").val());
 
     if (age <8){
-      $(".form1").hide();
+      $(".surv").hide();
       $(".lang").hide();
-      alert("Maybe enjoy childhood a little longer");
+      alert("Go enjoy childhood a little longer instead, soon you'll miss naps!");
     } else {
-      $(".form1").show();
-      $(".lang").show();
+      $(".surv").show();
+      $("#age").hide();
+      //$(".lang").show();
+    }
+    event.preventDefault();
+  })
+
+  $(".surv").submit(function(event){
+    lvl = $("#lvl").val();
+    obj = $("#obj").val();
+    eg = $("#eg").val();
+    if (obj == 3) {
+      $("#pol").show();
+    } else {(lvl ==basic && obj ==web)
+      $("#htm").show();
+      $("#cs").show();
+      $("#jsrpt").show();
     }
     event.preventDefault();
   })

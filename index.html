@@ -11,8 +11,8 @@
     <div class="container">
       <h2>Choosing a Programming Language</h2>
       <p>This is a survey to help you choose which programming language might be the best to begin learning.</p>
-      <h2>Please enter your age.</h2>
       <form id="age">
+        <h2>Please enter your age.</h2>
         <div class="form-group">
           <label for="age">Age</label>
           <input type="text" id="age" class="form-control">
@@ -20,33 +20,72 @@
         <button type="submit" type="btn">Submit Age</button>
       </form>
       <!-- age question here that prompts them to just enjoy being a kid if under 8 or something -->
-      <form class="form1">
-        <label for="field">Field of Interest</label>
-        <select class="form-control" id="field">
-          <option value="htm">HTML</option>
-          <option value="cs">CSS</option>
-          <option value="jsrpt">Javascript</option>
+      <form class="surv">
+        <label for="lvl">Level of knowledge</label>
+        <select class="form-control" id="lvl">
+          <option value="1">Very new to programming</option>
+          <option value="2">I know HTML a little</option>
+          <option value="3">I've done some css</option>
         </select>
-        <label for="a">a</label>
-        <select class="form-control" name="a">
-          <option value="a1">a1</option>
-          <option value="a2">a2</option>
-          <option value="a3">a3</option>
+        <label for="obj">What I want to do</label>
+        <select class="form-control" name="obj">
+          <option value="1">Make webpages</option>
+          <option value="2">Organize layouts of webpages</option>
+          <option value="3">Add cool functionality to webpages</option>
         </select>
-        <label for="a">a</label>
-        <select class="form-control" name="a">
-          <option value="a1">a1</option>
-          <option value="a2">a2</option>
-          <option value="a3">a3</option>
+        <label for="eg">Career end goal</label>
+        <select class="form-control" name="eg">
+          <option value="1">Web Developer</option>
+          <option value="2">Project Manager</option>
+          <option value="3">President</option>
         </select>
+        <label for="favDir">Favorite Direction</label>
+        <ul class="list-inline">
+          <li class="radio">
+            <label>
+              <input type="radio" name="dir" value="1">
+              North
+            </label>
+          </li>
+          <li class="radio">
+            <label>
+              <input type="radio" name="dir" value="2">
+              South
+            </label>
+          </li>
+          <li class="radio">
+            <label>
+              <input type="radio" name="dir" value="3">
+              East
+            </label>
+          </li>
+          <li class="radio">
+            <label>
+              <input type="radio" name="dir" value="4">
+              West
+            </label>
+          </li>
+        </ul>
         <!-- unrelated radio buttons here -->
-
+        <button type="submit" type="button">Finish Survey</button>
       </form>
       <div class="lang">
         <div id="htm">
-
+          <h2>HTML</h2>
+          <p>description of html</p>
         </div>
-
+        <div id="cs">
+          <h2>CSS</h2>
+          <p>description of css</p>
+        </div>
+        <div id="jsrpt">
+          <h2>Javascript</h2>
+          <p>description of javascript</p>
+        </div>
+        <div id="pol">
+          <h2>Politics</h2>
+          <p>If you want to be the president you should probably be interning as a political aid or something.</p>
+        </div>
       </div>
     </div>
   </body>
